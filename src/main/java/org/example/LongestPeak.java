@@ -25,7 +25,7 @@ public class LongestPeak {
             right[i] = curr;
         }
         for(int i = 0; i < n; i++) {
-            if(left[i] >= 2 && right[i] >= 2) longest = max(longest, left[i] + right[i] - 1);
+            if(left[i] >= 2 && right[i] >= 2) longest = Math.max(longest, left[i] + right[i] - 1);
         }
         return longest;
     }
