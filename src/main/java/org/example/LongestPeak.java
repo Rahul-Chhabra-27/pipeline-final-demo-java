@@ -12,8 +12,6 @@ public class LongestPeak {
         int longest = 0;
         int left = new int[n];
         int right = new int[n];
-        Arrays.fill(left,1);
-        Arrays.fill(right,1);
         int curr = 1;
         for(int i = 1; i < n; i++) {
             if(array[i] > array[i-1]) curr++;
